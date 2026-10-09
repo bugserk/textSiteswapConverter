@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サイトスワップコンバータ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://app.7131.jp/jmotion/v20/jmotion.js"></script>
+    <script src="JugglableSiteswapCalculator.js"></script>
+</head>
+
+
+<body>
+    <main class="container">
+        <!--タイトル-->
+        <header class="header">
+            <h1 class="title">
+                なんでも<br>
+                サイトスワップ<br>
+                変換器
+            </h1>
+            <p class="subtitle">
+                文字列をジャグリングしよう
+            </p>
+        </header>
+
+        <!--入力-->
+        <section class="search-card">
+            <h2 class="search-title">
+                文字列を入力してください
+            </h2>
+            <div class="input-row">
+                <input id="data-input" class="data-input" type="text">
+            </div>
+            <div id="input-warning" class="input-warning">
+                <span id="warning-message">入力内容を確認してください。</span>
+            </div>
+            <br>
+
+            <div class="input-row">
+                <button class="search-button" id="search-button">
+                    サーチ
+                </button>
+            </div>
+        </section>
+
+
+        <!--結果表示-->
+
+        <section class="result" id="result">
+            <div class="result-header">
+                <h2 class="result-date" id="result-date">
+                    「」のサイトスワップ
+                </h2>
+                <p class="result-count" id="result-count">
+                    <strong>0</strong> 個ヒット
+                </p>
+            </div>
+
+            <!-- パターン一覧 -->
+            <div class="pattern-grid" id="pattern-grid">
+                <!-- 例
+                <div class="pattern-card selected">
+                    <div class="pattern">531</div>
+                    <div class="pattern-description">
+                        サイトスワップ
+                    </div>
+                    <div class="play-icon">
+                        ▶
+                    </div>
+                </div>
+                -->
+            </div>
+        </section>
+        
+        <!-- アニメーション -->
+        <div class="animation-panel">
+            <svg class="animation-placeholder" id="animation-placeholder"></svg>
+        </div>
+
+        <!--説明-->
+        <section class="info">
+            <h2 class="info-title">
+                INFORMATION
+            </h2>
+            <div class="info-item">
+                <button class="info-button">
+                    <span>
+                        ？ サイトスワップとは？
+                    </span>
+                    <span class="info-icon">
+                        ＋
+                    </span>
+                </button>
+                <div class="info-content">
+                    サイトスワップは、ジャグリングのパターンを数列で表現する記法です。数字は投げる高さ（投げたボールが何拍後に再び投げられるか）を表します。<br><br>
+                    より詳しく知りたい方は以下のサイトがおすすめです。<br><br>
+                    日本ジャグリング協会『サイトスワップ』<br>
+                    <a href="https://www.juggling.jp/siteswap/" target="_blank">https://www.juggling.jp/siteswap/</a><br><br>
+
+                    Juggle Wiki 『Siteswap』<br>
+                    <a href="https://juggle.fandom.com/wiki/Siteswap" target="_blank">https://juggle.fandom.com/wiki/Siteswap</a>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <button class="info-button">
+                    <span>
+                        ？ ニコイチが表示されないんだけど？
+                    </span>
+                    <span class="info-icon">
+                        ＋
+                    </span>
+                </button>
+                <div class="info-content">
+                    制作者の技術不足によりニコイチはボールが重なって1つに見えてしまいます。心の目で見てください。
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <button class="info-button">
+                    <span>
+                        ？ このサイトについて
+                    </span>
+                    <span class="info-icon">
+                        ＋
+                    </span>
+                </button>
+                <div class="info-content">
+                    このサイトは、好きな文字列をジャグリング可能なサイトスワップに変換するサイトです。<br>
+                    このサイトを通じてサイトスワップに興味を持っていただけたら幸いです。
+                </div>
+            </div>
+        </section>
+
+
+        <!--ライブラリ-->
+
+        <section class="libraries">
+            <h2 class="libraries-title">
+                LIBRARIES
+            </h2>
+            <div class="library-list">
+                <a class="library-card" href="https://app.7131.jp/jmotion/v20/" target="_blank" rel="noopener">
+
+                    <div class="library-name">
+                        jmotion
+                    </div>
+
+                    <div class="library-description">
+                        サイトスワップのアニメーション表示に使用しています。
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+        <footer>
+            Birthday Siteswap Searcher
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
